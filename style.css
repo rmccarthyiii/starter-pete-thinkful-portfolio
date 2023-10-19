@@ -9,11 +9,13 @@ body {
 }
 
 /* Headings */
+
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
+  /* border: 1px solid #000; */
 }
 
 /* Header */
@@ -21,7 +23,19 @@ header {
   text-align: center;
 }
 
-/* Containers */
+/* h1 and links */
+#nav-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* About portfolio contact links */
+nav {
+  padding: 25px;
+  margin: 5px;
+}
+
 div {
   background-color: #eae2b7;
   margin: auto;
@@ -55,6 +69,24 @@ nav a {
   padding-left: 20px;
 }
 
+.about-container {
+  display: flex; /* change to flexbox */
+  flex-flow: column
+  flex-wrap: row;
+  justify-content: center; /* align items on main axis */
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center; 
+        
+}
+
+.portfolio-item {
+  flex: 1; 
+  padding: 5px;
+}
+
 /* Images */
 img {
   width: 100%;
@@ -63,6 +95,8 @@ img {
 }
 
 .image-circle {
+  align-items: flex-start;
+  flex-flow: wrap;
   border: 2px solid #003049;
   border-radius: 50%;
 }
