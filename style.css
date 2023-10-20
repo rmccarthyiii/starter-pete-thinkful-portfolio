@@ -9,7 +9,6 @@ body {
 }
 
 /* Headings */
-
 h1,
 h2,
 h3 {
@@ -69,11 +68,27 @@ nav a {
   padding-left: 20px;
 }
 
+/* About section*/
+#about p {
+  text-align: left;
+}
+
+#about li {
+  text-align: start;
+
+}
+
+/* Change to flexbox */
+/* Align items on main axis */
 .about-container {
-  display: flex; /* change to flexbox */
-  flex-flow: column
+  display: flex; 
   flex-wrap: row;
-  justify-content: center; /* align items on main axis */
+  justify-content: center; 
+}
+
+/* Portfolio section */
+#portfolio p {
+  font-size: 14px;
 }
 
 .portfolio-container {
